@@ -7,6 +7,7 @@ target 'NetImageLoad' do
 # Pods for NetImageLoad
 
 pod 'SDWebImage'
+pod 'Masonry'
 
 end
 

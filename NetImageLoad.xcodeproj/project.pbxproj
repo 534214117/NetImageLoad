@@ -13,6 +13,9 @@
 		047E737F21BA679F00695E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047E737D21BA679F00695E8F /* LaunchScreen.storyboard */; };
 		047E738221BA679F00695E8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047E738121BA679F00695E8F /* main.m */; };
 		2DA89B72ECE97636E8C2F6BF /* libPods-NetImageLoad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1F17121AA1AC190131BDE5 /* libPods-NetImageLoad.a */; };
+		F5BDDB2B21BBB0670086988E /* QuestionModal.m in Sources */ = {isa = PBXBuildFile; fileRef = F5BDDB2A21BBB0670086988E /* QuestionModal.m */; };
+		F5E83D9A21BBA9B800E004EC /* AutolayoutImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E83D9921BBA9B800E004EC /* AutolayoutImageView.m */; };
+		F5E83DA221BBAE8D00E004EC /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E83DA121BBAE8D00E004EC /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,12 @@
 		0A7E1AE6226D72D907D3ACD0 /* Pods-NetImageLoad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetImageLoad.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetImageLoad/Pods-NetImageLoad.release.xcconfig"; sourceTree = "<group>"; };
 		0F1F17121AA1AC190131BDE5 /* libPods-NetImageLoad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetImageLoad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B833F77B64BFD12973E4506 /* Pods-NetImageLoad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetImageLoad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetImageLoad/Pods-NetImageLoad.debug.xcconfig"; sourceTree = "<group>"; };
+		F5BDDB2921BBB0670086988E /* QuestionModal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionModal.h; sourceTree = "<group>"; };
+		F5BDDB2A21BBB0670086988E /* QuestionModal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionModal.m; sourceTree = "<group>"; };
+		F5E83D9821BBA9B800E004EC /* AutolayoutImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutImageView.h; sourceTree = "<group>"; };
+		F5E83D9921BBA9B800E004EC /* AutolayoutImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutImageView.m; sourceTree = "<group>"; };
+		F5E83DA021BBAE8D00E004EC /* CustomTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		F5E83DA121BBAE8D00E004EC /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,7 @@
 		047E737121BA679D00695E8F /* NetImageLoad */ = {
 			isa = PBXGroup;
 			children = (
+				F5E83D9721BBA99400E004EC /* AutolayoutNetImage */,
 				047E737221BA679D00695E8F /* AppDelegate.h */,
 				047E737321BA679D00695E8F /* AppDelegate.m */,
 				047E737521BA679D00695E8F /* ViewController.h */,
@@ -71,6 +81,10 @@
 				047E737D21BA679F00695E8F /* LaunchScreen.storyboard */,
 				047E738021BA679F00695E8F /* Info.plist */,
 				047E738121BA679F00695E8F /* main.m */,
+				F5E83DA021BBAE8D00E004EC /* CustomTableViewCell.h */,
+				F5E83DA121BBAE8D00E004EC /* CustomTableViewCell.m */,
+				F5BDDB2921BBB0670086988E /* QuestionModal.h */,
+				F5BDDB2A21BBB0670086988E /* QuestionModal.m */,
 			);
 			path = NetImageLoad;
 			sourceTree = "<group>";
@@ -81,6 +95,15 @@
 				0F1F17121AA1AC190131BDE5 /* libPods-NetImageLoad.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5E83D9721BBA99400E004EC /* AutolayoutNetImage */ = {
+			isa = PBXGroup;
+			children = (
+				F5E83D9821BBA9B800E004EC /* AutolayoutImageView.h */,
+				F5E83D9921BBA9B800E004EC /* AutolayoutImageView.m */,
+			);
+			path = AutolayoutNetImage;
 			sourceTree = "<group>";
 		};
 		F741DAA247DF1C6C07D6EF28 /* Pods */ = {
@@ -184,7 +207,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				047E737721BA679D00695E8F /* ViewController.m in Sources */,
+				F5BDDB2B21BBB0670086988E /* QuestionModal.m in Sources */,
+				F5E83D9A21BBA9B800E004EC /* AutolayoutImageView.m in Sources */,
 				047E738221BA679F00695E8F /* main.m in Sources */,
+				F5E83DA221BBAE8D00E004EC /* CustomTableViewCell.m in Sources */,
 				047E737421BA679D00695E8F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,8 +347,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SR38YPZY4M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NetImageLoad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,8 +366,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SR38YPZY4M;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NetImageLoad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
